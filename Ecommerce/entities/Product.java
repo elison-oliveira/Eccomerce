@@ -10,6 +10,9 @@ public class Product {
     private Integer code;
     private Color color;
 
+    public Product() {
+    }
+
     public Product(String product, Color color, Double price, Integer quantity, Integer code) {
         this.product = product;
         this.color = color;
@@ -17,6 +20,8 @@ public class Product {
         this.quantity = quantity;
         this.code = code;
     }
+
+
 
     public String getProduct() {
         return product;
@@ -28,6 +33,10 @@ public class Product {
 
     public Color getColor() {
         return color;
+    }
+
+    public void setColor(Color color){
+        this.color = color;
     }
 
     public Double getPrice() {
@@ -42,8 +51,16 @@ public class Product {
         return quantity;
     }
 
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
     public Integer getCode() {
         return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
     }
 
     public Double valueInStock(){

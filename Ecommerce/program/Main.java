@@ -12,14 +12,23 @@ import java.util.List;
 import java.util.Locale;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
 
         Product bedWhite = new Product("bed", Color.WHITE, 450.00, 5, 1200536);
-        Product bedBlack = new Product("bed", Color.BLACK, 450.00, 10, 1200536);
+//      Product bedBlack = new Product("bed", Color.BLACK, 450.00, 10, 1200536);
+        Product bedBlack = new Product();
+
+        bedBlack.setProduct("bed");
+        bedBlack.setColor(Color.BLACK);
+        bedBlack.setPrice(300.00);
+        bedBlack.setQuantity(3);
+        bedBlack.setCode(140036022);
+
+
         Product chairWhite = new Product("chair", Color.WHITE, 20.00, 20, 1200536);
-        Client client = new Client("Ana", "ana@gmail.com", "wall street nº 40", "103648");
+        Client client = new Client("Ana", "ana@gmail.com", "wall street nº 40");
 
         List<Product> products = new ArrayList<>();
 

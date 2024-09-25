@@ -5,13 +5,14 @@ public class Client {
     private String name;
     private String contact;
     private String address;
-    private final String id;
 
-    public Client(String name, String contact, String address, String id) {
+    public Client() {
+    }
+
+    public Client(String name, String contact, String address) {
         this.name = name;
         this.contact = contact;
         this.address = address;
-        this.id = id;
     }
 
     public String getName() {
@@ -36,10 +37,6 @@ public class Client {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public String getId() {
-        return id;
     }
 
     @Override

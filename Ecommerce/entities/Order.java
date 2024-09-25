@@ -12,7 +12,10 @@ public class Order {
     private List<OrderItem> item;
     private Date date;
 
-    public Order(Client client,List<OrderItem> item, Date date) {
+    public Order() {
+    }
+
+    public Order(Client client, List<OrderItem> item, Date date) {
         this.client = client;
         this.date = date;
         this.item = item;
