@@ -28,7 +28,7 @@ public class Main {
 
 
         Product chairWhite = new Product("chair", Color.WHITE, 20.00, 20, 1200536);
-        Client client = new Client("Ana", "ana@gmail.com", "wall street nº 40");
+        Client client = new Client("Ana", "ana@gmail.com", "wall street nº 40", 123);
 
         List<Product> products = new ArrayList<>();
 

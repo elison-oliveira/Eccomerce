@@ -1,15 +1,15 @@
 package Ecommerce.entities;
 
-public class Client {
+public abstract class Person {
 
     private String name;
     private String contact;
     private String address;
 
-    public Client() {
+    public Person() {
     }
 
-    public Client(String name, String contact, String address) {
+    public Person(String name, String contact, String address) {
         this.name = name;
         this.contact = contact;
         this.address = address;
